@@ -15,7 +15,7 @@ public class He {
      * @param filePath
      */
 	static int []PPGInputdata=new int[4000]; 
-	static int []Inputdata = new int[400];
+	static int []Inputdata = new int[6644];
 	
 	
     public static void readTxtFile(String filePath){
@@ -184,32 +184,14 @@ public class He {
 	static SignalProgress MySignalProgress;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String filePath = "E:\\Cloud\\study\\Circuit Person\\JAVA\\Test2\\src\\log.txt";
+		String filePath = "E:\\Cloud\\study\\Circuit Person\\JAVA\\Test2\\CircuitPerson\\src\\PpgFltt2.txt";
         readTxtFile(filePath);
+        SignalProgress.filppgdetection(Inputdata);
 		System.out.println("hello world!");
-//		MiddleFilter();
-//		
 //		for(int i=0;i<Inputdata.length;i++)
-//			Inputdata[i]=PPGInputdata[i];
-//		MM_bs(125);
-//		for(int i=0;i<Inputdata.length;i++)
-//		{
-//			//System.out.print(i+" ");
-//			System.out.println(Inputdata[i]);
-//		}
-//		
-		/*for(int i=0;i<Inputdata.length;i++)
-			System.out.println(Inputdata[i]);*/
-		System.out.println(MySignalProgress.
-				HeartRate(Inputdata,Inputdata.length));
+//			System.out.println(i+" "+Inputdata[i]);
 
-		/*for(int i=0;i<PPGInputdata.length-1;i++)
-		{
-			System.out.print(i+" ");
-			System.out.println(PPGInputdata[i]);
-		}*/
-		
-		//String Datapath="PPG_Data.txt";
+
 
 	}
 
